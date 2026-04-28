@@ -8,7 +8,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import Modal from '../../UI/Modal'
 import { getLocalized } from '../../UI/localize'
-import TelegramLoginModal from '../../UI/Telegramloginmodal'
+import TelegramLoginModal from '../../UI/TelegramLoginModal.jsx'
 // import TelegramLoginModal from '../../UI/Telegramloginmodal'
 
 // localStorage uchun yengil format — base64 rasmlarni o'chiradi,
