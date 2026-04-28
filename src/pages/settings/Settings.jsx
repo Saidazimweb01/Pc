@@ -5,7 +5,7 @@ import Header from '../homePage/header/Header'
 import Footer from '../homePage/footer/Footer'
 import './Settings.css'
 import { useLoginUpMutation } from '../../app/services/pcApi'
-import TelegramLoginModal from '../../UI/Telegramloginmodal'
+import TelegramLoginModal from '../../UI/TelegramLoginModal.jsx'
 
 const LANGUAGES = [
     { code: 'en', flag: 'EN', label: 'English' },
