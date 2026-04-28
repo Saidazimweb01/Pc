@@ -1,0 +1,443 @@
+{
+    "nav": {
+        "models": "Models",
+        "catalog": "Catalog",
+        "build": "My orders",
+        "brands": "Brands",
+        "settings": "Settings"
+    },
+    "catalog": {
+        "computers": "Computers",
+        "monoblocks": "Monoblocks",
+        "laptops": "Laptops",
+        "cases": "Cases",
+        "accessories": "Accessories"
+    },
+    "home": {
+        "new_label": "Latest Builds",
+        "new_title": "New Arrivals",
+        "performance": "Performance",
+        "power": "Power",
+        "precision": "Precision",
+        "view_models": "View models"
+    },
+    "brands": {
+        "label": "Partners",
+        "title": "Brands",
+        "show_all": "View all brands",
+        "hide": "Hide",
+        "total_brands": "brands",
+        "search_ph": "Search brands...",
+        "not_found": "No brands found"
+    },
+    "details": {
+        "in_stock": "In Stock",
+        "out_of_stock": "Out of Stock",
+        "add_to_cart": "Add to Cart",
+        "specs": "Specifications",
+        "ram": "RAM",
+        "ssd": "Storage (SSD)",
+        "base": "Base",
+        "id": "Product ID",
+        "added_at": "Added",
+        "similar": "Similar Products",
+        "similar_label": "You may also like",
+        "all_products": "All products →",
+        "specs_cpu": "Processor",
+        "specs_gpu": "Graphics Card",
+        "specs_board": "Motherboard",
+        "specs_hz": "Refresh Rate",
+        "specs_dpi": "DPI",
+        "specs_monitor": "Monitor",
+        "specs_display": "Display",
+        "specs_cooling": "Cooling",
+        "specs_case": "Case",
+        "specs_color": "Color",
+        "specs_power": "Power Supply",
+        "specs_battery": "Battery"
+    },
+    "categories": {
+        "label": "Category",
+        "products": "products",
+        "search": "Search in",
+        "not_found": "No products found",
+        "empty": "No products in this category",
+        "home": "Home"
+    },
+    "basket": {
+        "title": "Cart",
+        "label": "Cart",
+        "products": "items",
+        "empty": "Your cart is empty",
+        "total": "Total",
+        "items_count": "Items",
+        "amount": "Amount",
+        "order": "Place Order",
+        "ram": "RAM",
+        "ssd": "SSD",
+        "home": "Home",
+        "extra": "extra",
+        "sht": ""
+    },
+    "create": {
+        "title": "Add New Product",
+        "subtitle": "Follow a few simple steps to list a product in the catalog. It takes no more than 2–3 minutes.",
+        "start": "Get Started",
+        "back": "Back to Products",
+        "next": "Next",
+        "prev": "Back",
+        "publish": "Publish Product",
+        "saving": "Saving...",
+        "uploading": "Uploading photos...",
+        "success": "Product Published!",
+        "success_sub": "successfully added to the catalog.",
+        "redirect": "Redirecting in",
+        "sec": "sec.",
+        "steps": {
+            "start": "Start",
+            "photos": "Photos",
+            "info": "Info",
+            "options": "Options",
+            "price": "Price",
+            "translate": "Translate"
+        },
+        "translate": {
+            "title": "Translate to 3 Languages",
+            "desc": "AI has translated the name and description. Review and edit if needed.",
+            "original": "Original text",
+            "loading": "AI is translating...",
+            "retry": "Re-translate",
+            "done": "Done"
+        },
+        "photos": {
+            "title": "Product Photos",
+            "desc": "Add up to 3 images. The first will be the main photo.",
+            "hint": "Supports JPG, PNG, WEBP up to 5 MB",
+            "slot": "Photo"
+        },
+        "info": {
+            "title": "Basic Information",
+            "desc": "Product name, description and category.",
+            "name_label": "Name",
+            "name_ph": "E.g.: Gaming PC — RTX 4070 | i7-13700K",
+            "desc_label": "Description",
+            "desc_ph": "Describe the product: technical details, advantages...",
+            "cat_label": "Category",
+            "cat_ph": "Select a category",
+            "translations_label": "Translations",
+            "translations_hint": "Fill in at least one language...",
+            "translations_required": "⚠ Fill in at least one language"
+        },
+        "options": {
+            "title": "Technical Specifications",
+            "desc": "Fill in the fields and select available configurations.",
+            "acc_desc": "No specifications required for accessories.",
+            "ram_title": "RAM",
+            "ssd_title": "Storage (SSD)",
+            "base": "base"
+        },
+        "price": {
+            "title": "Product Price",
+            "desc": "Enter the price in US dollars.",
+            "label": "Price (USD)"
+        },
+        "categories": {
+            "PC": "Computer",
+            "mono": "All-in-One",
+            "corpus": "PC Case",
+            "laptop": "Laptop",
+            "accessories": "Accessories"
+        },
+        "fields": {
+            "cpu": "CPU",
+            "gpu": "GPU",
+            "board": "Motherboard",
+            "power": "Power Supply",
+            "cooler": "Cooler",
+            "corpus": "Case",
+            "display": "Display",
+            "hz": "Refresh Rate (Hz)",
+            "brand": "Brand product",
+            "brand_ph": "Enter brand",
+            "os": "Os System"
+        }
+    },
+    "admin": {
+        "profile": {
+            "prof": "Profile"
+        },
+        "sidebar": {
+            "admin": "ADMIN",
+            "products": "Products",
+            "analytics": "Orders",
+            "settings": "Settings",
+            "logout": "Logout"
+        },
+        "topbar": {
+            "title": "Products",
+            "active": "Active",
+            "revenue": "Revenue"
+        },
+        "table": {
+            "title": "All Products",
+            "add": "Add",
+            "edit": "Edit",
+            "delete": "Delete",
+            "id": "ID",
+            "photo": "Photo",
+            "name": "Name",
+            "price": "Price",
+            "cpu": "CPU",
+            "gpu": "GPU",
+            "category": "Category",
+            "status": "Status",
+            "actions": "Actions",
+            "loading": "Loading...",
+            "error": "Failed to load data",
+            "empty": "No products found"
+        },
+        "status": {
+            "active": "Active",
+            "inactive": "Inactive"
+        },
+        "modal": {
+            "specs": "Specifications",
+            "ram": "RAM options",
+            "ssd": "SSD options",
+            "base": "base"
+        },
+        "categories": {
+            "pc": "Computer",
+            "mono": "Monoblock",
+            "corpus": "PC Case",
+            "accessories": "Accessories"
+        },
+        "orders": {
+            "topbar": {
+                "title": "Orders",
+                "total": "Total",
+                "pending": "Pending"
+            },
+            "stats": {
+                "total": "Total",
+                "pending": "Pending",
+                "revenue": "Revenue",
+                "today": "Today"
+            },
+            "table": {
+                "title": "All Orders",
+                "search_ph": "ID, name, or phone...",
+                "filters": {
+                    "all": "All",
+                    "pending": "Pending",
+                    "confirmed": "Confirmed",
+                    "shipping": "Shipping",
+                    "delivered": "Delivered",
+                    "cancelled": "Cancelled"
+                },
+                "columns": {
+                    "id": "ID",
+                    "customer": "Customer",
+                    "products": "Products",
+                    "total": "Total",
+                    "status": "Status",
+                    "date": "Date"
+                },
+                "states": {
+                    "loading": "Loading...",
+                    "error": "An error occurred",
+                    "empty": "No orders found"
+                },
+                "badges": {
+                    "new": "NEW"
+                }
+            },
+            "modal": {
+                "customer": "Customer",
+                "products": "Products",
+                "not_found": "No products found",
+                "total": "Total",
+                "items_count": "{{count}} items",
+                "change_status": "Change status:",
+                "actions": {
+                    "confirm": "Confirm",
+                    "delivered": "Delivered",
+                    "cancel": "Cancel",
+                    "back_pending": "Back to pending"
+                }
+            },
+            "confirm": {
+                "delete": "Are you sure you want to delete this order?"
+            },
+            "common": {
+                "items_short": "{{count}} pcs",
+                "usd": "USD"
+            }
+        }
+    },
+    "settings": {
+        "title": "Settings",
+        "label": "Personalization",
+        "language": "Interface Language",
+        "lang_desc": "Choose the display language for the site",
+        "saved": "Language saved",
+        "back": "Back"
+    },
+    "cat": {
+        "catalog": "Catalog",
+        "select_category": "Select a category",
+        "laptops": {
+            "title": "Laptops",
+            "description": "Thin and powerful"
+        },
+        "computers": {
+            "title": "Computers",
+            "description": "For work and gaming"
+        },
+        "monoblocks": {
+            "title": "All-in-One PCs",
+            "description": "All in one"
+        },
+        "cases": {
+            "title": "PC Cases",
+            "description": "Style and protection"
+        },
+        "accessories": {
+            "title": "Accessories",
+            "description": "Mice, keyboards, etc."
+        },
+        "view_more": "View",
+        "not_found": "No results found for your search",
+        "search_placeholder": "Search by categories..."
+    },
+    "news": {
+        "newest_builds": "Newest builds",
+        "new_arrivals": "New arrivals"
+    },
+    "footer": {
+        "description": "A modern online computer store with the largest range of products at minimum prices in Uzbekistan.",
+        "shop_title": "Online Store",
+        "categories_title": "Categories",
+        "personal_title": "Personal",
+        "links": {
+            "models": "Models",
+            "catalog": "Catalog",
+            "brands": "Brands",
+            "search": "Search",
+            "computers": "Computers",
+            "monoblocks": "Monoblocks",
+            "laptops": "Laptops",
+            "components": "Components",
+            "my_orders": "My Orders",
+            "cart": "Shopping Cart"
+        },
+        "contacts": {
+            "phone": "Phone",
+            "work_hours_label": "Working Hours",
+            "work_hours_value": "MON-SUN 9:00 AM TO 6:00 PM",
+            "address_label": "Address",
+            "address_value": "NIYOZBEK ST, 6TH PASSAGE, HOUSE 16"
+        },
+        "copy": "© 2026 . ALL RIGHTS RESERVED",
+        "made_by": "Website by"
+    },
+    "profile": {
+        "label": "Personal Account",
+        "title": "Profile",
+        "info": "Personal Information",
+        "edit": "Edit",
+        "save": "Save",
+        "cancel": "Cancel",
+        "saved": "Saved",
+        "name": "First Name",
+        "name_ph": "Enter your name",
+        "surname": "Last Name",
+        "surname_ph": "Enter your last name",
+        "email": "Email",
+        "password": "Password",
+        "change_photo": "Change photo",
+        "logout": "Log Out",
+        "login_title": "Sign In",
+        "login_desc": "Sign in to access your personal account",
+        "signup_title": "Create Account",
+        "signup_desc": "Sign up to save your orders and preferences",
+        "login_btn": "Sign In",
+        "signup_btn": "Sign Up",
+        "no_account": "Don't have an account?",
+        "has_account": "Already have an account?",
+        "signup_link": "Sign Up",
+        "login_link": "Sign In"
+    },
+    "search_page": {
+        "home": "Home",
+        "placeholder": "Search products...",
+        "loading": "Loading...",
+        "filters": "Filters",
+        "filter_params": "Filter Parameters",
+        "reset_all": "Reset All",
+        "reset_filters": "Reset Filters",
+        "found": "{{count}} products found",
+        "sort": {
+            "default": "Default",
+            "price_asc": "Price: Low to High",
+            "price_desc": "Price: High to Low",
+            "name": "Name"
+        },
+        "price_title": "Price",
+        "price_from": "From",
+        "price_to": "To"
+    },
+    "orders": {
+        "page": {
+            "cabinet": "Personal account",
+            "title": "My orders",
+            "subtitle": "All your orders and their status"
+        },
+        "chip": {
+            "orders_count": "{{count}} orders"
+        },
+        "loading": "Loading...",
+        "empty": {
+            "title": "You have not ordered anything yet",
+            "cta": "Shop now →"
+        },
+        "status": {
+            "pending": "Pending",
+            "confirmed": "Confirmed",
+            "shipping": "On the way",
+            "delivered": "Delivered",
+            "cancelled": "Cancelled"
+        },
+        "cancelled_banner": "Order cancelled",
+        "meta": {
+            "time": "Time",
+            "items_count": "{{count}} items",
+            "currency": "USD"
+        },
+        "steps": {
+            "pending": "Received",
+            "confirmed": "Confirmed",
+            "shipping": "On the way",
+            "delivered": "Delivered"
+        },
+        "total": {
+            "label": "Total payment"
+        },
+        "actions": {
+            "cancel": "Cancel"
+        },
+        "confirm_cancel": {
+            "title": "Cancel this order?",
+            "desc": "This action cannot be undone",
+            "no": "No",
+            "yes": "Yes, cancel"
+        }
+    },
+    "userOrders": {
+        "mono": "All-in-One",
+        "laptop": "Laptop",
+        "pc": "Personal Computer",
+        "corpus": "Computer Case",
+        "access": "Accessories"
+    }
+}

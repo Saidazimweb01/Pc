@@ -1,0 +1,443 @@
+{
+    "nav": {
+        "models": "Modellar",
+        "catalog": "Katalog",
+        "build": "Mening zakazlarim",
+        "brands": "Brendlar",
+        "settings": "Sozlamalar"
+    },
+    "catalog": {
+        "computers": "Kompyuterlar",
+        "monoblocks": "Monoboklar",
+        "laptops": "Noutbuklar",
+        "cases": "Korpuslar",
+        "accessories": "Aksessuarlar"
+    },
+    "home": {
+        "new_label": "Eng yangi yig'ilmalar",
+        "new_title": "Yangiliklar",
+        "performance": "Unumdorlik",
+        "power": "Quvvat",
+        "precision": "Aniqlik",
+        "view_models": "Modellarni ko'rish"
+    },
+    "brands": {
+        "label": "Hamkorlar",
+        "title": "Brendlar",
+        "show_all": "Barcha brendlarni ko'rish",
+        "hide": "Yashirish",
+        "total_brands": "Brendlar",
+        "search_ph": "Brendlarni qidirish...",
+        "not_found": "Brandlar topilmadi"
+    },
+    "details": {
+        "in_stock": "Mavjud",
+        "out_of_stock": "Mavjud emas",
+        "add_to_cart": "Savatga",
+        "specs": "Xususiyatlar",
+        "ram": "Operativ xotira",
+        "ssd": "Xotira (SSD)",
+        "base": "Asosiy",
+        "id": "Mahsulot ID",
+        "added_at": "Qo'shilgan",
+        "similar": "O'xshash mahsulotlar",
+        "similar_label": "Shuningdek ko'ring",
+        "all_products": "Barcha mahsulotlar →",
+        "specs_cpu": "Protsessor",
+        "specs_gpu": "Videokarta",
+        "specs_board": "Plata",
+        "specs_hz": "Yangilanish tezligi",
+        "specs_dpi": "DPI",
+        "specs_monitor": "Monitor",
+        "specs_display": "Displey",
+        "specs_cooling": "Sovutgich",
+        "specs_case": "Korpus",
+        "specs_color": "Rang",
+        "specs_power": "Quvvat bloki",
+        "specs_battery": "Batareya"
+    },
+    "categories": {
+        "label": "Kategoriya",
+        "products": "ta mahsulot",
+        "search": "Qidirish",
+        "not_found": "Mahsulot topilmadi",
+        "empty": "Kategoriyada mahsulot yo'q",
+        "home": "Bosh sahifa"
+    },
+    "basket": {
+        "title": "Savat",
+        "label": "Savat",
+        "products": "ta mahsulot",
+        "empty": "Savat bo'sh",
+        "total": "Jami",
+        "items_count": "Mahsulotlar",
+        "amount": "Summa",
+        "order": "Buyurtma berish",
+        "ram": "OZU",
+        "ssd": "SSD",
+        "home": "Bosh sahifa",
+        "extra": "qo'sh.",
+        "sht": "ta"
+    },
+    "create": {
+        "title": "Yangi mahsulot qo'shish",
+        "subtitle": "Mahsulotni katalogga joylashtirish uchun bir necha oddiy qadamdan o'ting. Bu 2–3 daqiqadan ortiq vaqt olmaydi.",
+        "start": "Boshlash",
+        "back": "Mahsulotlarga qaytish",
+        "next": "Keyingisi",
+        "prev": "Orqaga",
+        "publish": "Mahsulotni chiqarish",
+        "saving": "Saqlanmoqda...",
+        "uploading": "Rasm yuklanmoqda...",
+        "success": "Mahsulot chiqarildi!",
+        "success_sub": "katalogga muvaffaqiyatli qo'shildi.",
+        "redirect": "O'tish",
+        "sec": "sek.",
+        "steps": {
+            "start": "Boshlash",
+            "photos": "Rasm",
+            "info": "Ma'lumot",
+            "options": "Parametrlar",
+            "price": "Narx",
+            "translate": "Tarjima"
+        },
+        "translate": {
+            "title": "3 tilga tarjima",
+            "desc": "AI nom va tavsifni tarjima qildi. Tekshirib, kerak bo'lsa tahrirlang.",
+            "original": "Asl matn",
+            "loading": "AI tarjima qilyapti...",
+            "retry": "Qayta tarjima qilish",
+            "done": "Tayyor"
+        },
+        "photos": {
+            "title": "Mahsulot rasmlari",
+            "desc": "3 tagacha rasm qo'shing. Birinchisi asosiy bo'ladi.",
+            "hint": "JPG, PNG, WEBP 5 MBgacha qo'llab-quvvatlanadi",
+            "slot": "Rasm"
+        },
+        "info": {
+            "title": "Asosiy ma'lumot",
+            "desc": "Mahsulot nomi, tavsifi va kategoriyasi.",
+            "name_label": "Nomi",
+            "name_ph": "Masalan: Gaming PC — RTX 4070 | i7-13700K",
+            "desc_label": "Tavsif",
+            "desc_ph": "Mahsulotni tasvirlab bering: texnik tafsilotlar...",
+            "cat_label": "Kategoriya",
+            "cat_ph": "Kategoriyani tanlang",
+            "translations_label": "Tarjimalar",
+            "translations_hint": "Kamida bitta tilni toʻldiring. Qolganlarini boʻsh qoldirish mumkin.",
+            "translations_required": "⚠ Kamida bitta tilni toʻldiring"
+        },
+        "options": {
+            "title": "Texnik xususiyatlar",
+            "desc": "Maydonlarni to'ldiring va mavjud konfiguratsiyalarni tanlang.",
+            "acc_desc": "Aksessuarlar uchun xususiyatlar talab etilmaydi.",
+            "ram_title": "OZU (RAM)",
+            "ssd_title": "Xotira (SSD)",
+            "base": "asosiy"
+        },
+        "price": {
+            "title": "Mahsulot narxi",
+            "desc": "AQSh dollarida narxni kiriting.",
+            "label": "Narx (USD)"
+        },
+        "categories": {
+            "PC": "Kompyuter",
+            "mono": "Monoblok",
+            "corpus": "Korpus",
+            "laptop": "Noutbuk",
+            "accessories": "Aksessuarlar"
+        },
+        "fields": {
+            "cpu": "CPU",
+            "gpu": "GPU",
+            "board": "Plata",
+            "power": "Quvvat bloki",
+            "cooler": "Sovutgich",
+            "corpus": "Korpus",
+            "display": "Displey",
+            "hz": "Chastota (Hz)",
+            "brand": "Brend Mahsulot",
+            "brand_ph": "Mahsulotning brendini kiriting",
+            "os": "Operatsion sistema"
+        }
+    },
+    "admin": {
+        "profile": {
+            "prof": "Profil"
+        },
+        "sidebar": {
+            "admin": "ADMIN",
+            "products": "Mahsulotlar",
+            "analytics": "Buyurtmalar",
+            "settings": "Sozlamalar",
+            "logout": "Chiqish"
+        },
+        "topbar": {
+            "title": "Mahsulotlar",
+            "active": "Faol",
+            "revenue": "Daromad"
+        },
+        "table": {
+            "title": "Barcha mahsulotlar",
+            "add": "Qo‘shish",
+            "id": "ID",
+            "edit": "O'zgartirish",
+            "delete": "O'chirish",
+            "photo": "Rasm",
+            "name": "Nomi",
+            "price": "Narxi",
+            "cpu": "CPU",
+            "gpu": "GPU",
+            "category": "Kategoriya",
+            "status": "Holati",
+            "actions": "Amallar",
+            "loading": "Yuklanmoqda...",
+            "error": "Ma'lumotlarni yuklashda xatolik",
+            "empty": "Mahsulotlar topilmadi"
+        },
+        "status": {
+            "active": "Faol",
+            "inactive": "Nofaol"
+        },
+        "modal": {
+            "specs": "Xususiyatlar",
+            "ram": "RAM variantlari",
+            "ssd": "SSD variantlari",
+            "base": "asosiy"
+        },
+        "categories": {
+            "pc": "Kompyuter",
+            "mono": "Monoblok",
+            "corpus": "Korpus",
+            "accessories": "Aksessuarlar"
+        },
+        "orders": {
+            "topbar": {
+                "title": "Buyurtmalar",
+                "total": "Jami",
+                "pending": "Kutilmoqda"
+            },
+            "stats": {
+                "total": "Jami",
+                "pending": "Kutilmoqda",
+                "revenue": "Daromad",
+                "today": "Bugun"
+            },
+            "table": {
+                "title": "Barcha buyurtmalar",
+                "search_ph": "ID, ism yoki telefon...",
+                "filters": {
+                    "all": "Barchasi",
+                    "pending": "Kutilmoqda",
+                    "confirmed": "Tasdiqlangan",
+                    "shipping": "Yetkazilmoqda",
+                    "delivered": "Yetkazildi",
+                    "cancelled": "Bekor qilindi"
+                },
+                "columns": {
+                    "id": "ID",
+                    "customer": "Mijoz",
+                    "products": "Mahsulotlar",
+                    "total": "Jami",
+                    "status": "Status",
+                    "date": "Sana"
+                },
+                "states": {
+                    "loading": "Yuklanmoqda...",
+                    "error": "Xatolik yuz berdi",
+                    "empty": "Buyurtmalar topilmadi"
+                },
+                "badges": {
+                    "new": "YANGI"
+                }
+            },
+            "modal": {
+                "customer": "Mijoz",
+                "products": "Mahsulotlar",
+                "not_found": "Mahsulotlar topilmadi",
+                "total": "Jami",
+                "items_count": "{{count}} ta",
+                "change_status": "Statusni o'zgartirish:",
+                "actions": {
+                    "confirm": "Tasdiqlash",
+                    "delivered": "Yetkazildi",
+                    "cancel": "Bekor qilish",
+                    "back_pending": "Kutilmoqdaga qaytarish"
+                }
+            },
+            "confirm": {
+                "delete": "Buyurtmani o'chirishni tasdiqlaysizmi?"
+            },
+            "common": {
+                "items_short": "{{count}} ta",
+                "usd": "USD"
+            }
+        }
+    },
+    "settings": {
+        "title": "Sozlamalar",
+        "label": "Shaxsiylashtirish",
+        "language": "Interfeys tili",
+        "lang_desc": "Sayt ko'rinishi tilini tanlang",
+        "saved": "Til saqlandi",
+        "back": "Orqaga"
+    },
+    "cat": {
+        "catalog": "Katalog",
+        "select_category": "Kategoriyani tanlang",
+        "laptops": {
+            "title": "Noutbuklar",
+            "description": "Ingichka va quvvatli"
+        },
+        "computers": {
+            "title": "Kompyuterlar",
+            "description": "Ish va o'yin uchun"
+        },
+        "monoblocks": {
+            "title": "Monoboklar",
+            "description": "Hammasi bir joyda"
+        },
+        "cases": {
+            "title": "Korpuslar",
+            "description": "Uslub va himoya"
+        },
+        "accessories": {
+            "title": "Aksessuarlar",
+            "description": "Sichqoncha, klaviatura va b."
+        },
+        "view_more": "Ko'rish",
+        "not_found": "Qidiruv bo'yicha hech narsa topilmadi",
+        "search_placeholder": "Kategoriyalar bo'yicha qidirish..."
+    },
+    "news": {
+        "newest_builds": "Eng yangi yig'ilmalar",
+        "new_arrivals": "Yangiliklar"
+    },
+    "footer": {
+        "description": "O'zbekistonda eng katta assortiment va minimal narxlarda zamonaviy kompyuter do'koni.",
+        "shop_title": "Internet do'kon",
+        "categories_title": "Kategoriyalar",
+        "personal_title": "Shaxsiy kabinet",
+        "links": {
+            "models": "Modellar",
+            "catalog": "Katalog",
+            "brands": "Brendlar",
+            "search": "Qidirish",
+            "computers": "Kompyuterlar",
+            "monoblocks": "Monoboklar",
+            "laptops": "Noutbuklar",
+            "components": "Komplektlovchilar",
+            "my_orders": "Buyurtmalarim",
+            "cart": "Savat"
+        },
+        "contacts": {
+            "phone": "Telefon",
+            "work_hours_label": "Ish vaqti",
+            "work_hours_value": "DU-YA 9:00 — 18:00",
+            "address_label": "Manzil",
+            "address_value": "NIYOZBEK KO'CHASI, 6-O'TKAZGICh, 16-UY"
+        },
+        "copy": "© 2026 . BARCHA HUQUQLAR HIMOYALANGAN",
+        "made_by": "Sayt yaratuvchisi"
+    },
+    "profile": {
+        "label": "Shaxsiy kabinet",
+        "title": "Profil",
+        "info": "Shaxsiy ma'lumotlar",
+        "edit": "Tahrirlash",
+        "save": "Saqlash",
+        "cancel": "Bekor qilish",
+        "saved": "Saqlandi",
+        "name": "Ism",
+        "name_ph": "Ismingizni kiriting",
+        "surname": "Familiya",
+        "surname_ph": "Familiyangizni kiriting",
+        "email": "Email",
+        "password": "Parol",
+        "change_photo": "Rasmni o'zgartirish",
+        "logout": "Chiqish",
+        "login_title": "Hisobga kiring",
+        "login_desc": "Shaxsiy kabinetga kirish uchun tizimga kiring",
+        "signup_title": "Hisob yaratish",
+        "signup_desc": "Buyurtmalar va sozlamalarni saqlash uchun ro'yxatdan o'ting",
+        "login_btn": "Kirish",
+        "signup_btn": "Ro'yxatdan o'tish",
+        "no_account": "Hisobingiz yo'qmi?",
+        "has_account": "Hisobingiz bormi?",
+        "signup_link": "Ro'yxatdan o'tish",
+        "login_link": "Kirish"
+    },
+    "search_page": {
+        "home": "Bosh sahifa",
+        "placeholder": "Qidiruv...",
+        "loading": "Yuklanmoqda...",
+        "sort": {
+            "default": "Standart",
+            "price_asc": "Narx: arzon → qimmat",
+            "price_desc": "Narx: qimmat → arzon",
+            "name": "Alfavit bo'yicha"
+        },
+        "filters": "Filtrlar",
+        "filter_params": "Filtr parametrlari",
+        "reset_all": "Barchasini tiklash",
+        "reset_filters": "Filtrlarni tozalash",
+        "price_title": "Narx",
+        "price_from": "dan",
+        "price_to": "gacha",
+        "found": "{{count}} ta mahsulot topildi"
+    },
+    "orders": {
+        "page": {
+            "cabinet": "Shaxsiy kabinet",
+            "title": "Mening zakazlarim",
+            "subtitle": "Barcha buyurtmalaringiz va ularning holati"
+        },
+        "chip": {
+            "orders_count": "{{count}} ta zakaz"
+        },
+        "loading": "Yuklanmoqda...",
+        "empty": {
+            "title": "Siz hali hech narsa buyurtma qilmagansiz",
+            "cta": "Xarid qilish →"
+        },
+        "status": {
+            "pending": "Kutilmoqda",
+            "confirmed": "Tasdiqlangan",
+            "shipping": "Yo'lda",
+            "delivered": "Yetkazildi",
+            "cancelled": "Bekor qilindi"
+        },
+        "cancelled_banner": "Buyurtma bekor qilindi",
+        "meta": {
+            "time": "Vaqt",
+            "items_count": "{{count}} ta mahsulot",
+            "currency": "USD"
+        },
+        "steps": {
+            "pending": "Qabul",
+            "confirmed": "Tasdiqlandi",
+            "shipping": "Yo'lda",
+            "delivered": "Yetkazildi"
+        },
+        "total": {
+            "label": "Jami to'lov"
+        },
+        "actions": {
+            "cancel": "Bekor qilish"
+        },
+        "confirm_cancel": {
+            "title": "Buyurtmani bekor qilasizmi?",
+            "desc": "Bu amalni qaytarib bo'lmaydi",
+            "no": "Yoq",
+            "yes": "Ha, bekor qilish"
+        }
+    },
+    "userOrders": {
+        "mono": "Monoblok",
+        "laptop": "Noutbuk",
+        "pc": "Personalniy kompyuter",
+        "corpus": "Korpus",
+        "access": "Aksessuarlar"
+    }
+}

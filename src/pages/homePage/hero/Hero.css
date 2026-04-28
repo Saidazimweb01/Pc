@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;600;700&display=swap');
+
+/* ── Root tokens ── */
+:root {
+  --clr-white: #ffffff;
+  --clr-base: rgba(40, 40, 42, 1);
+  --clr-base-light: rgba(58, 58, 62, 1);
+  --clr-base-dark: rgba(24, 24, 26, 1);
+  --clr-accent: #c8a96e;
+  --clr-accent-soft: rgba(200, 169, 110, 0.18);
+  --clr-glass: rgba(40, 40, 42, 0.55);
+  --clr-glass-border: rgba(200, 169, 110, 0.22);
+  --ease-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ── Wrapper ── */
+.showcase {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Outfit', sans-serif;
+  background: var(--clr-base);
+  padding-top: 100px;
+}
+
+/* ── Slide backgrounds ── */
+.showcase__slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  will-change: opacity, transform;
+}
+
+.showcase__slide--behind {
+  z-index: 1;
+  opacity: 1;
+}
+
+.showcase__slide--front {
+  z-index: 2;
+  opacity: 1;
+}
+
+.showcase__slide--entering {
+  animation: slideEnter 1.1s var(--ease-expo) forwards;
+}
+
+@keyframes slideEnter {
+  0% {
+    opacity: 0;
+    transform: scale(1.07);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ── Cinematic gradient overlay ── */
+.showcase__veil {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  background:
+    linear-gradient(to top,  rgba(24, 24, 26, 0.92) 0%, rgba(40, 40, 42, 0.55) 40%, rgba(40, 40, 42, 0.2) 100%),
+    linear-gradient(to right, rgba(24, 24, 26, 0.6) 0%, transparent 65%);
+}
+
+/* Noise grain texture */
+.showcase__veil::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+/* ── Content block ── */
+.showcase__body {
+  position: relative;
+  z-index: 5;
+  padding: 0 clamp(1.5rem, 5vw, 4rem);
+  max-width: 780px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Eyebrow tag */
+.showcase__tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--clr-accent-soft);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--clr-glass-border);
+  border-radius: 999px;
+  color: var(--clr-accent);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 0.4rem 1rem;
+  margin-bottom: 1.4rem;
+}
+
+.showcase__tag-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--clr-accent);
+  animation: pulse 2s ease infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.4; transform: scale(0.7); }
+}
+
+/* Heading */
+.showcase__heading {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(4rem, 10vw, 9rem);
+  line-height: 0.92;
+  letter-spacing: 0.01em;
+  color: var(--clr-white);
+  margin: 0 0 0.6rem;
+  text-shadow: 0 4px 40px rgba(0,0,0,0.5);
+}
+
+.showcase__heading span {
+  color: var(--clr-accent);
+}
+
+/* Subtitle */
+.showcase__sub {
+  font-size: clamp(0.85rem, 1.4vw, 1.05rem);
+  font-weight: 300;
+  color: rgba(255,255,255,0.7);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin: 0 0 2.4rem;
+}
+
+/* CTA button */
+.showcase__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--clr-accent);
+  color: var(--clr-base-dark);
+  border: none;
+  border-radius: 999px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 0.9rem 2.2rem;
+  cursor: pointer;
+  transition: transform 0.25s var(--ease-expo), box-shadow 0.25s var(--ease-expo);
+}
+
+.showcase__cta:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 12px 36px rgba(200, 169, 110, 0.4);
+}
+
+.showcase__cta-arrow {
+  display: inline-block;
+  transition: transform 0.25s var(--ease-expo);
+}
+
+.showcase__cta:hover .showcase__cta-arrow {
+  transform: translateX(4px);
+}
+
+/* ── Progress bar ── */
+.showcase__progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  z-index: 6;
+  background: rgba(40, 40, 42, 0.6);
+  overflow: hidden;
+}
+
+.showcase__progress-fill {
+  height: 100%;
+  background: var(--clr-accent);
+  transform-origin: left;
+  animation: progressRun 2.5s linear forwards;
+}
+
+@keyframes progressRun {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
+/* ── Side navigation arrows ── */
+.showcase__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 6;
+  background: var(--clr-glass);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--clr-glass-border);
+  color: var(--clr-accent);
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, transform 0.2s, border-color 0.2s;
+}
+
+.showcase__nav:hover {
+  background: rgba(200, 169, 110, 0.18);
+  border-color: rgba(200, 169, 110, 0.6);
+}
+
+.showcase__nav--prev { left: 2rem; }
+.showcase__nav--next { right: 2rem; }
+
+.showcase__nav:hover.showcase__nav--prev { transform: translateY(-50%) translateX(-2px); }
+.showcase__nav:hover.showcase__nav--next { transform: translateY(-50%) translateX(2px);  }
+
+/* ── Slide counter ── */
+.showcase__counter {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index: 6;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.12em;
+  color: rgba(255,255,255,0.5);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.showcase__counter-current {
+  font-size: 1.6rem;
+  color: var(--clr-white);
+  line-height: 1;
+}
+
+/* ── Dot indicators ── */
+.showcase__dots {
+  position: absolute;
+  bottom: 2.8rem;
+  right: 2.5rem;
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.showcase__dot {
+  width: 3px;
+  height: 24px;
+  border-radius: 999px;
+  background: rgba(200, 169, 110, 0.25);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.3s, transform 0.3s, height 0.3s var(--ease-expo);
+}
+
+.showcase__dot--on {
+  background: var(--clr-accent);
+  height: 40px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .showcase__nav { display: none; }
+  .showcase__counter { top: 1rem; right: 1rem; }
+  .showcase__dots { right: 1rem; }
+}

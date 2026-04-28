@@ -1,0 +1,186 @@
+.brands {
+    background-color: rgba(40, 40, 42, 1);
+    padding: 80px 0;
+    border-top: 1px solid rgba(169, 169, 170, 0.08);
+}
+
+/* Header */
+.brands__header {
+    margin-bottom: 2.5rem;
+}
+
+.brands__label {
+    display: block;
+    font-size: 0.65rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #A9A9AA;
+    margin-bottom: 0.4rem;
+}
+
+.brands__title {
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+}
+
+/* Grid */
+.brands__list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Card */
+.brands__item {
+    background: #212123;
+    border: 1px solid rgba(169, 169, 170, 0.1);
+    border-radius: 16px;
+    padding: 1.8rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+    animation: brandIn 0.45s cubic-bezier(0.23, 1, 0.32, 1) both;
+    transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1),
+                border-color 0.3s ease,
+                box-shadow 0.3s ease,
+                background 0.3s ease;
+}
+
+@keyframes brandIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.brands__item:hover {
+    transform: translateY(-6px);
+    border-color: rgba(169, 169, 170, 0.3);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+    background: rgba(169, 169, 170, 0.06);
+}
+
+.brands__list:has(.brands__item:hover) .brands__item:not(:hover) {
+    opacity: 0.4;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Image */
+.brands__img-wrap {
+    width: 72px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brands__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* filter: brightness(0) invert(0.65);
+    transition: filter 0.3s ease, transform 0.35s cubic-bezier(0.23, 1, 0.32, 1); */
+}
+
+.brands__item:hover .brands__img {
+    /* filter: brightness(0) invert(1); */
+    transform: scale(1.12);
+}
+
+/* Name */
+.brands__name {
+    font-size: 0.75rem;
+    color: #A9A9AA;
+    letter-spacing: 0.05em;
+    transition: color 0.3s ease;
+    text-align: center;
+}
+
+.brands__item:hover .brands__name {
+    color: #fff;
+}
+
+/* Footer button */
+.brands__footer {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.brands__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #212123;
+    border: 1px solid rgba(169, 169, 170, 0.2);
+    color: #A9A9AA;
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background 0.25s ease,
+                border-color 0.25s ease,
+                color 0.25s ease,
+                transform 0.25s ease;
+}
+
+.brands__btn:hover {
+    background: rgba(169, 169, 170, 0.08);
+    border-color: rgba(169, 169, 170, 0.4);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.brands__btn-icon {
+    transition: transform 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.brands__btn-icon--up {
+    transform: rotate(180deg);
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 1024px) {
+    .brands__list { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (max-width: 640px) {
+    .brands__list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.75rem;
+    }
+    .brands__item {
+        padding: 1.2rem 0.75rem;
+    }
+    .brands__img-wrap {
+        width: 52px;
+        height: 34px;
+    }
+}
+
+@media (max-width: 420px) {
+    .brands__list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.6rem;
+    }
+    .brands__item {
+        padding: 1rem 0.5rem;
+        border-radius: 12px;
+    }
+    .brands__img-wrap {
+        width: 44px;
+        height: 28px;
+    }
+    .brands__name {
+        font-size: 0.65rem;
+    }
+    .brands {
+        padding: 50px 0;
+    }
+}

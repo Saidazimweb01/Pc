@@ -1,0 +1,583 @@
+.basket {
+    background-color: rgba(40, 40, 42, 1);
+    min-height: 100vh;
+    padding: 150px 0 60px;
+}
+
+/* Head */
+.basket__head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.basket__status {
+    color: #A9A9AA;
+    font-size: 0.65rem;
+    margin-bottom: 6px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+}
+
+.basket__title {
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    margin: 0;
+}
+
+.basket__badge {
+    background: rgba(29, 61, 180, 0.15);
+    color: #6381e8;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid rgba(29, 61, 180, 0.25);
+}
+
+/* Layout */
+.basket__layout {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 24px;
+    align-items: start;
+}
+
+/* List */
+.basket__list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Item */
+.basket__item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background: #212123;
+    border: 1px solid rgba(169, 169, 170, 0.08);
+    border-radius: 16px;
+    padding: 16px;
+    cursor: pointer;
+    transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+.basket__item:hover {
+    border-color: rgba(169, 169, 170, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Photo */
+.basket__photo {
+    width: 86px;
+    height: 86px;
+    flex-shrink: 0;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.basket__photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.basket__photo-placeholder { font-size: 30px; }
+
+/* Info */
+.basket__info {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.basket__category {
+    font-size: 0.68rem;
+    color: #6381e8;
+    background: rgba(29, 61, 180, 0.1);
+    border-radius: 5px;
+    padding: 2px 7px;
+    display: inline-block;
+    width: fit-content;
+}
+
+.basket__name {
+    max-width: 500px;
+    color: #fff;
+    font-size: 0.88rem;
+    font-weight: 500;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.basket__price {
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 400;
+}
+
+.basket__price em {
+    color: #A9A9AA;
+    font-style: normal;
+    font-size: 0.8rem;
+}
+
+/* Counter */
+.basket__counter {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(169, 169, 170, 0.12);
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.basket__counter-btn {
+    background: none;
+    border: none;
+    color: #A9A9AA;
+    width: 34px;
+    height: 34px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.basket__counter-btn:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+}
+
+.basket__counter-num {
+    color: #fff;
+    font-size: 0.88rem;
+    min-width: 28px;
+    text-align: center;
+    border-left: 1px solid rgba(169, 169, 170, 0.12);
+    border-right: 1px solid rgba(169, 169, 170, 0.12);
+    height: 34px;
+    line-height: 34px;
+}
+
+/* Summary */
+.basket__summary {
+    background: #212123;
+    border: 1px solid rgba(169, 169, 170, 0.08);
+    border-radius: 16px;
+    padding: 24px;
+    position: sticky;
+    top: 100px;
+}
+
+.basket__summary-title {
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 18px;
+}
+
+.basket__summary-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.basket__summary-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.83rem;
+    color: #A9A9AA;
+}
+
+.basket__free { color: #4caf7d; font-size: 0.83rem; }
+
+.basket__divider {
+    height: 1px;
+    background: rgba(169, 169, 170, 0.1);
+    margin: 16px 0;
+}
+
+.basket__total-row {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+/* Order btn */
+.basket__order-btn {
+    width: 100%;
+    padding: 14px;
+    background: #1D3DB4;
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 0.88rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
+    font-family: inherit;
+}
+
+.basket__order-btn:hover {
+    background: #2a4fd4;
+    box-shadow: 0 4px 24px rgba(29, 61, 180, 0.45);
+    transform: translateY(-1px);
+}
+
+/* Delete */
+.basket__delete {
+    background: rgba(255, 80, 80, 0.08);
+    border: none;
+    border-radius: 8px;
+    padding: 7px 10px;
+    color: rgba(255, 100, 100, 0.7);
+    cursor: pointer;
+    font-size: 15px;
+    transition: background 0.2s, color 0.2s;
+    flex-shrink: 0;
+}
+
+.basket__delete:hover {
+    background: rgba(255, 80, 80, 0.18);
+    color: #ff6464;
+}
+
+/* Breadcrumb */
+.basket-map {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.basket-map a { color: white; font-size: 13px; text-decoration: none; }
+.basket-map span { color: rgb(150, 150, 150); font-size: 13px; }
+
+/* Empty */
+.basket__empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 24px;
+    gap: 16px;
+}
+
+.basket__empty-icon { font-size: 48px; }
+
+.basket__empty-text {
+    color: #A9A9AA;
+    font-size: 1rem;
+}
+
+/* Options RAM/SSD */
+.basket__item-options {
+    margin: 8px 0 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.basket__option-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.basket__option-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #888;
+    min-width: 36px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.basket__option-chips {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.basket__option-chip {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    border: 1.5px solid #333;
+    background: transparent;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.18s ease;
+    white-space: nowrap;
+    font-family: inherit;
+}
+
+.basket__option-chip:hover { border-color: #4f8ef7; color: #4f8ef7; }
+
+.basket__option-chip.active {
+    background: #4f8ef7;
+    border-color: #4f8ef7;
+    color: #fff;
+}
+
+.basket__option-chip em {
+    font-style: normal;
+    font-size: 11px;
+    opacity: 0.85;
+    font-weight: 400;
+}
+
+.basket__price-extra {
+    font-size: 12px;
+    color: #4f8ef7;
+    margin-left: 6px;
+    font-weight: 400;
+    opacity: 0.85;
+}
+
+.basket__original-price {
+    color: rgba(169, 169, 170, 0.4);
+    font-size: 0.72rem;
+    font-style: normal;
+}
+
+/* Skeleton */
+.skeleton-pulse {
+    background: linear-gradient(90deg, #2a2a2c 25%, #323234 50%, #2a2a2c 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+}
+
+.skeleton-line { border-radius: 6px; display: block; }
+
+@keyframes shimmer {
+    0%   { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+/* ═══════════════════════════════════
+   RESPONSIVE
+   ═══════════════════════════════════ */
+
+@media (max-width: 900px) {
+    .basket { padding: 130px 0 60px; }
+
+    .basket__layout {
+        grid-template-columns: 1fr;
+    }
+
+    .basket__summary {
+        position: static;
+    }
+
+    .basket__name { max-width: 100%; }
+}
+
+@media (max-width: 640px) {
+    .basket { padding: 110px 0 48px; }
+
+    .basket__item {
+        gap: 12px;
+        padding: 14px;
+    }
+
+    .basket__photo { width: 70px; height: 70px; }
+
+    .basket__name    { font-size: 0.82rem; }
+    .basket__price   { font-size: 0.88rem; }
+    .basket__category{ font-size: 0.62rem; }
+    .basket__title   { font-size: 1.4rem; }
+}
+
+@media (max-width: 480px) {
+    .basket { padding: 100px 0 40px; }
+
+    .basket__item {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 12px;
+    }
+
+    .basket__photo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .basket__info { flex: 1; min-width: 0; }
+
+    /* Counter va delete oxirgi qatorda o'ngga */
+    .basket__counter { margin-left: auto; }
+
+    .basket__delete  { padding: 6px 9px; font-size: 13px; }
+
+    .basket__name    { font-size: 0.8rem; }
+    .basket__price   { font-size: 0.85rem; }
+
+    .basket__summary { padding: 18px; }
+
+    .basket__order-btn { font-size: 0.85rem; padding: 13px; }
+
+    .basket__option-chip { font-size: 11px; padding: 3px 8px; }
+
+    .basket__counter-btn { width: 30px; height: 30px; font-size: 16px; }
+    .basket__counter-num { min-width: 24px; height: 30px; line-height: 30px; font-size: 0.82rem; }
+}
+
+@media (max-width: 360px) {
+    .basket__option-group {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .basket__option-chips {
+        width: 100%;
+    }
+
+    .basket__option-chip {
+        flex: 1;
+        justify-content: center;
+    }
+}
+    .basket { padding: 95px 0 36px; }
+
+    .container { padding: 0 12px; }
+
+    .basket__item { padding: 10px; gap: 8px; }
+
+    .basket__photo { width: 52px; height: 52px; padding: 6px; }
+
+    .basket__name     { font-size: 0.75rem; }
+    .basket__price    { font-size: 0.8rem; }
+    .basket__category { font-size: 0.6rem; }
+
+    .basket__counter-btn { width: 28px; height: 28px; font-size: 14px; }
+    .basket__counter-num { min-width: 20px; height: 28px; line-height: 28px; font-size: 0.78rem; }
+
+    .basket__delete { padding: 5px 7px; font-size: 12px; }
+
+    .basket__summary { padding: 14px; }
+    .basket__order-btn { font-size: 0.8rem; padding: 12px; }
+
+    .basket__title { font-size: 1.2rem; letter-spacing: 1px; }
+    .basket__badge { font-size: 0.68rem; padding: 4px 10px; }
+
+    .basket__option-chip { font-size: 10px; padding: 3px 7px; }
+    .basket__option-label { font-size: 10px; }
+}
+
+@media (max-width: 360px) {
+    /* Options — to'liq kenglikda pastga tushadi */
+    .basket__item {
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .basket__item-options {
+        order: 3;
+        width: 100%;
+        margin-top: 4px;
+    }
+
+    .basket__option-chips { width: 100%; }
+
+    /* Counter — to'liq kenglikda pastga */
+    .basket__counter {
+        order: 4;
+        width: 100%;
+        margin-left: 0;
+        border-radius: 10px;
+    }
+
+    .basket__counter-btn { flex: 1; justify-content: center; }
+    .basket__counter-num { flex: 1; text-align: center; }
+
+    /* Delete — counter yonida emas, alohida */
+    .basket__delete {
+        order: 2;
+        margin-left: auto;
+        align-self: flex-start;
+    }
+}
+
+@media (max-width: 260px) {
+    /* Item vertikal — hamma narsa pastga tushadi */
+    .basket__item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .basket__photo { width: 100%; height: 100px; border-radius: 10px; }
+
+    .basket__info { width: 100%; }
+
+    /* Options to'liq kenglikda */
+    .basket__item-options { width: 100%; }
+
+    .basket__option-group {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .basket__option-chips {
+        width: 100%;
+        gap: 4px;
+    }
+
+    .basket__option-chip {
+        flex: 1;
+        justify-content: center;
+    }
+
+    /* Counter va delete yonma-yon, to'liq kenglikda */
+    .basket__counter {
+        width: 100%;
+        margin-left: 0;
+        justify-content: space-between;
+    }
+
+    .basket__counter-btn { flex: 0 0 36px; }
+    .basket__counter-num { flex: 1; }
+
+    .basket__delete { width: 100%; justify-content: center; border-radius: 8px; padding: 8px; }
+}
